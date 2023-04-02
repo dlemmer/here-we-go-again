@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+
+
+</head>
+
+<body>
+
+    <!-- NAVBAR - панель навигации, 4 ссылки на подстраницы ресурса + лого MV -->
+    <header>
+        <div class="header__content">
+            <div class="container">
+                <div class="header__content-inner">
+                    <div class="header__logo">
+                        <a href="main.html">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="main.html" class="">MAIN</a></li>
+                            <li><a href="info.html" class="">INFO</a></li>
+                            <li><a href="download.html" class="">DOWNLOAD</a></li>
+                            <li><a href="contacts.html" class="">CONTACTS</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Блок "welcome", краткое название ПП, кнопка скачивания, небольшое поясненение области применения -->
+
+    <section class="main__bg">
+        <div class="container">
+            <div class="main__bg__inner">
+                <div class="main__title">
+                    MIAVI
+                </div>
+                <div class="line">
+                </div>
+                <div class="main__text">
+                    Perform data extraction from data carriers for their analysis with the only available tool for LINUX
+                    OS in Russia
+                </div>
+                <div class="button">
+                    <a href='download.html' class="main__button">
+                        DOWNLOAD
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Заголовок секции преимуществ -->
+
+    <section id="advantages">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading" id="col_title"><mark>/At Your Service.</mark></h2>
+                    <hr class="stripe">
+                </div>
+            </div>
+        </div>
+
+        <!-- Блок, отражающий преимущества использования ПП, содержит иконки по тематике и краткие плюсы -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="mx-auto service-box mt-5">
+                        <img src="/images/icons/plane.png" alt="" class="img_block_icon">
+                        <h3 class="mb-3">Detailed documentation</h3>
+                        <p class="text-muted mb-0">Our code is updated regularly so it don't break.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="mx-auto service-box mt-5">
+                        <img src="/images/icons/documentary.png" alt="" class="img_block_icon">
+                        <h3 class="mb-3" id="row_title">Ready to help</h3>
+                        <p class="text-muted mb-0" id="row_text">You can use this app as is, or you can make changes!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="mx-auto service-box mt-5">
+                        <img src="/images/icons/uptodate.png" alt="" class="img_block_icon">
+                        <h3 class="mb-3" id="row_title">Up to Date</h3>
+                        <p class="text-muted mb-0" id="row_text">We update dependencies to keep things fresh.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="mx-auto service-box mt-5">
+                        <img src="/images/icons/open_source.png" alt="" class="img_block_icon">
+                        <h3 class="mb-3" id="row_title">Open-Source code</h3>
+                        <p class="text-muted mb-0" id="row_text">You have to make your own solution based in our
+                            product.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок содержащий колонки изображений, переводящие на страницию инфоблок ресурса по 3 тематикам -->
+
+    <section class="info">
+        <div class="info_header">
+            <div class="text-center" id="info_title">
+                <h3>Get more information about forensics in other resourses</h3>
+                <p>Try your hand at computer forensics by taking a new path.
+                    Select resourses you like and start exploring</p>
+            </div>
+        </div>
+        <div class="img_block">
+            <div class="img_element">
+                <div class=""><a class="portfolio-box" href="#"><img class="img-fluid" id="img" src="/images/1.jpg"></a>
+                    <div class="overlay">
+                        <div class="text"><a href="#">FORENSICS</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="img_element">
+                <a class="portfolio-box" href="#"><img class="img-fluid" id="img" src="/images/2.jpg"></a>
+                <div class="overlay">
+                    <div class="text"><a href="#">FORENSICS</a></div>
+                </div>
+            </div>
+            <div class="img_element">
+                <a class="portfolio-box" href="#"><img class="img-fluid" id="img" src="/images/3.jpg"></a>
+                <div class="overlay">
+                    <div class="text"><a href="#">FORENSICS</a></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция try it right now. Содержит заголовок, напоминающий пользователю о "необходимости" опробования ПП.
+Также присутствует кнопка "DOWNLOAD NOW!", НЕОБХОДИМ СКРИПТ JS, ЧТОБЫ БЫЛ ОБРАТНЫЙ СКРОЛЛ К ИЗНАЧАЛЬНОМУ ПОЛОЖЕНИЮ СТРАНИЦЫ-->
+
+    <!-- Цвет фона #212529 - bg-dark -->
+    <section class="text-white bg-secondary">
+        <div class="text-center" id="try_container">
+            <h2 class="try_tittle">Try it right now!</h2>
+            <div class="button">
+                <a href='download.html' class="main__button" id="try_button">
+                    DOWNLOAD NOW!
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-white bg-dark text-center">
+        <div class="container">
+            <div class="footer_inner">
+                <p class="footer_text">Voronezh, 2023</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
