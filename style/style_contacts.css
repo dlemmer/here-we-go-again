@@ -72,3 +72,8 @@ li {
     height: auto;
     margin-bottom: 15px;
 }
+
+#resourses_link {
+    margin-top: 20px;
+    font-weight: 300;
+}

@@ -162,7 +162,7 @@ li {
 }
 
 .img_element:hover .overlay {
-    opacity: 1;
+    opacity: 0.89;
 }
 
 .overlay {
@@ -230,4 +230,16 @@ li {
 .footer_text {
     padding-top: 40px;
     font-weight: 300;
+}
+
+#resourses_link {
+    padding-top: 50px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+#resourses_name {
+    font-size: 18px;
+    opacity: 0.5;
+    font-weight: 400;
 }
