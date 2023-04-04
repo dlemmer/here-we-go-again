@@ -98,19 +98,25 @@ li {
 }
 
 .main__button {
+    text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    font-weight: 400;
-    border: 1px solid aliceblue;
-    padding: 11px 34px;
-    padding-top: 15px;
-    cursor: pointer;
-    background-color: #000;
+    color: white;
+    padding: 20px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-image: linear-gradient(to right, rgb(237, 216, 177) 0%, rgb(216, 146, 13), rgb(237, 205, 148) 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
 }
 
 .main__button:hover {
-    background-color: aliceblue;
+    background-position: right center;;
     color: #000;
+    font-weight: 500;
 }
 
 .button {
@@ -208,17 +214,24 @@ li {
 
 #info_title p {
     font-weight: 300;
-    font-size: 14px;
+    font-size: 17px;
 }
 
 #try_container {
     min-height: 290px;
+    background-color: white;
 }
 
 .try_tittle {
     padding-top: 75px;
+    margin-bottom: 10px;
 }
-
+.try_text {
+    color: #000;
+    font-weight: 300;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
 #try_button {
     margin-top: 30px;
 }
