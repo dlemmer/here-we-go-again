@@ -74,7 +74,7 @@ li {
     text-align: center;
 }
 
-.main__title {
+.main__title{
     padding-top: 78px;
     padding-bottom: 0px;
     font-size: 177px;
@@ -85,9 +85,10 @@ li {
     opacity: 0;
     transition: all 0.8s ease 0s;
 }
-.main__title.active {
+.main__title{
     transform: translate(0px 0px);
     opacity: 1;
+    z-index: 999999;
 }
 
 .main__text {
@@ -270,5 +271,5 @@ li {
 	width: 100%;
 	left: 0;
 	top: 0;
-    z-index: -1;
+    z-index: 99999;
 }
