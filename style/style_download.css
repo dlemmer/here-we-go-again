@@ -49,3 +49,26 @@ li {
 .menu a:hover {
     border-color: aliceblue;
 }
+
+.check-icon {
+    width: 45%;
+    height: auto;
+    padding-left: 15px;
+} 
+.check-icon1 {
+    width: 40%;
+    height: auto;
+    padding-left: 15px;
+} 
+
+.download_title {
+    text-align: center;
+}
+
+.d_text {
+    font-size: 300;
+}
+.prediction {
+    width: 75%;
+}
+

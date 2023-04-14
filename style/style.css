@@ -58,7 +58,7 @@ li {
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
-    min-height: 845px;
+    min-height: 745px;
 }
 
 .main__bg_inner {
@@ -77,15 +77,23 @@ li {
 .main__title {
     padding-top: 78px;
     padding-bottom: 0px;
-    font-size: 223px;
+    font-size: 177px;
     font-weight: 900;
-    min-height: 382px;
+    max-height: 311px;
+
+    transform: translate(0px,16px);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.main__title.active {
+    transform: translate(0px 0px);
+    opacity: 1;
 }
 
 .main__text {
     padding-top: 10px;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 17px;
     margin-bottom: 30px;
 }
 
@@ -255,4 +263,12 @@ li {
     font-size: 18px;
     opacity: 0.5;
     font-weight: 400;
+}
+
+.fixed {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+    z-index: -1;
 }
