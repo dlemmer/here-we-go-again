@@ -278,13 +278,13 @@ li {
 
 .services__item {
 	opacity: 0;
-	transform: translateX(-30px);
+	transform: translateY(30px);
 	transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
 }
 
 .services__item.animation-class {
 	opacity: 1;
-	transform: translateX(0);
+	transform: translateY(0);
 	transition: opacity 0.1s ease-in-out, transform 0.3s ease-in-out;
 }
 

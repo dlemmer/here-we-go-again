@@ -75,13 +75,13 @@ li {
 }
 
 .sep_img {
-    width: 57%;
-    height: 112%;
-    margin-left: 88px;
+    width: 65%;
+    height: 123%;
+    margin-left: 16px;
 }
 
 .text_left {
-    max-width: 528px;
+    min-width: 528px;
     padding-left: 164px;
     padding-top: 10px;
     font-weight: 300;
@@ -102,4 +102,10 @@ li {
 #footer_text {
     padding-top: 40px;
     font-weight: 300;
+}
+
+/* Правки */
+
+.text_block {
+    margin-top: 68px;
 }
