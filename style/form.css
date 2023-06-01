@@ -61,7 +61,7 @@ body {
     width: 100%;
   }
   
-  .cut {
+  /* .cut {
     background-color: #15172b;
     border-radius: 10px;
     height: 20px;
@@ -76,11 +76,11 @@ body {
   .cut-short {
     width: 50px;
   }
-  
-  .input:focus ~ .cut,
+   */
+  /* .input:focus ~ .cut,
   .input:not(:placeholder-shown) ~ .cut {
     transform: translateY(8px);
-  }
+  } */
   
   .placeholder {
     color: #65657b;
@@ -94,7 +94,7 @@ body {
     top: 20px;
   }
   
-  .input:focus ~ .placeholder,
+  /* .input:focus ~ .placeholder,
   .input:not(:placeholder-shown) ~ .placeholder {
     transform: translateY(-30px) translateX(10px) scale(0.75);
   }
@@ -106,7 +106,7 @@ body {
   .input:focus ~ .placeholder {
     color: #dc2f55;
   }
-  
+   */
   .button {
     background-color: rgb(240,95,64);
     border-radius: 12px;
@@ -127,3 +127,8 @@ body {
     background-color: rgb(192, 77, 52);
   }
   
+  #firstname, #lastname, #email {
+    font-size: 15px;
+    font-weight: 300;
+    opacity: 0.6;
+  }
