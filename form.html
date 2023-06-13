@@ -8,27 +8,23 @@
     <title>Document</title>
 </head>
 <body>
-    <form class="form" onclick="return sendform();">
+  <button class="trigger">Click the modal!</button>
+    <form class="form">
+        <span class="close-button">×</span>
         <div class="title">Приветствуем</div>
         <div class="subtitle">Оставьте заявку, и мы свяжемся с вами!</div>
         <div class="input-container ic1">
           <input id="firstname" name="name" class="input" type="text" placeholder="Имя" />
-          <!-- <div class="cut"></div> -->
-          <!-- <label for="firstname" class="placeholder">Имя</label> -->
         </div>
         <div class="input-container ic2">
           <input id="lastname" name="sname" class="input" type="text" placeholder="Фамилия" />
-          <!-- <div class="cut"></div> -->
-          <!-- <label for="lastname" class="placeholder">Фамилия</label> -->
         </div>
         <div class="input-container ic2">
           <input id="email" name="email" class="input" type="text" placeholder="E-mail" />
-          <!-- <div class="cut cut-short"></div> -->
-          <!-- <label for="email" class="placeholder">Email</> -->
         </div>
-        <div>
+        <div class="data_agree">
           <input type="checkbox" id="horns" name="data_check">
-          <label id="data_name" for="horns">Horns</label>
+          <label id="data_name" for="horns">Согласие на обработку персональных данных</label>
         </div>
         <button type="text" class="button">ОТПРАВИТЬ</button>
       </form>

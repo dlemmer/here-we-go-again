@@ -14,9 +14,38 @@ body {
   background-color: #15172b;
   border-radius: 20px;
   box-sizing: border-box;
-  height: 500px;
+  height: 550px;
   padding: 20px;
   width: 320px;
+  position: fixed;
+  left: 585px;
+  top: 85px;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.show-form {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: rgb(144, 144, 144);
+}
+
+.close-button:hover {
+  background-color: #eee
 }
 
 .title {
@@ -62,26 +91,6 @@ body {
   width: 100%;
 }
 
-/* .cut {
-    background-color: #15172b;
-    border-radius: 10px;
-    height: 20px;
-    left: 20px;
-    position: absolute;
-    top: -20px;
-    transform: translateY(0);
-    transition: transform 200ms;
-    width: 76px;
-  }
-  
-  .cut-short {
-    width: 50px;
-  }
-   */
-/* .input:focus ~ .cut,
-  .input:not(:placeholder-shown) ~ .cut {
-    transform: translateY(8px);
-  } */
 
 .placeholder {
   color: #65657b;
@@ -95,19 +104,6 @@ body {
   top: 20px;
 }
 
-/* .input:focus ~ .placeholder,
-  .input:not(:placeholder-shown) ~ .placeholder {
-    transform: translateY(-30px) translateX(10px) scale(0.75);
-  }
-  
-  .input:not(:placeholder-shown) ~ .placeholder {
-    color: #808097;
-  }
-  
-  .input:focus ~ .placeholder {
-    color: #dc2f55;
-  }
-   */
 .button {
   background-color: rgb(240, 95, 64);
   border-radius: 12px;
@@ -119,7 +115,6 @@ body {
   font-weight: 300;
   height: 50px;
   margin-top: 38px;
-  /* outline: 0; */
   text-align: center;
   width: 100%;
 }
@@ -136,11 +131,14 @@ body {
   opacity: 0.6;
 }
 
-#data_check {
+.data_agree {
   margin-top: 10px;
 }
 
 #data_name {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
+  font-size: 13px;
+  color: #eee;
+  margin-top: 10px;
 }

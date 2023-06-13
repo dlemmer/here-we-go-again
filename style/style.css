@@ -74,18 +74,19 @@ li {
     text-align: center;
 }
 
-.main__title{
+.main__title {
     padding-top: 78px;
     padding-bottom: 0px;
     font-size: 177px;
     font-weight: 900;
     max-height: 311px;
 
-    transform: translate(0px,16px);
+    transform: translate(0px, 16px);
     opacity: 0;
     transition: all 0.8s ease 0s;
 }
-.main__title{
+
+.main__title {
     transform: translate(0px 0px);
     opacity: 1;
     z-index: 999999;
@@ -123,7 +124,8 @@ li {
 }
 
 .main__button:hover {
-    background-position: right center;;
+    background-position: right center;
+    ;
     color: #000;
     font-weight: 500;
 }
@@ -164,7 +166,7 @@ li {
     width: 50%;
 }
 
-.text a{
+.text a {
     color: white;
     font-size: 20px;
     position: absolute;
@@ -190,7 +192,7 @@ li {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgb(240,95,64);
+    background-color: rgb(240, 95, 64);
 }
 
 
@@ -235,12 +237,14 @@ li {
     padding-top: 75px;
     margin-bottom: 10px;
 }
+
 .try_text {
     color: #000;
     font-weight: 300;
     margin-bottom: 15px;
     font-size: 17px;
 }
+
 #try_button {
     margin-top: 30px;
 }
@@ -269,34 +273,33 @@ li {
 /* стиль для анимации js */
 
 .fixed {
-	position: fixed;
-	width: 100%;
-	left: 0;
-	top: 0;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
     z-index: 99999;
 }
 
 .services__item {
-	opacity: 0;
-	transform: translateY(30px);
-	transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
 }
 
 .services__item.animation-class {
-	opacity: 1;
-	transform: translateY(0);
-	transition: opacity 0.1s ease-in-out, transform 0.3s ease-in-out;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.1s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .services__item.animation-class:nth-child(2) {
-	transition-delay: 0.2s;
+    transition-delay: 0.2s;
 }
 
 .services__item.animation-class:nth-child(3) {
-	transition-delay: 0.4s;
+    transition-delay: 0.4s;
 }
 
 .services__item.animation-class:nth-child(4) {
-	transition-delay: 0.6s;
+    transition-delay: 0.6s;
 }
-

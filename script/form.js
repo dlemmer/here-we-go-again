@@ -1,22 +1,17 @@
-function sendform() {
+var form = document.querySelector(".form");
+var trigger = document.querySelector(".trigger");
+var closeButton = document.querySelector(".close-button");
 
-    if (document.forms[0].name.value == "") {
-        alert('Пожалуйста, введите полную информацию о себе');
-        document.mailform.name.focus();
-        return false
-    }
-
-    // if (document.forms[1].sname.value == "") {
-    //     alert('Пожалуйста, введите Ваше имя');
-    //     document.mailform.name.focus();
-    //     return false
-    // }
-
-    // if (document.forms[2].email.value == "") {
-    //     alert('Пожалуйста, введите электронный адрес');
-    //     document.mailform.email.focus();
-    //     return false
-    // }
-
-    return true;
+function toggleModal() {
+    form.classList.toggle("show-form");
 }
+
+function windowOnClick(event) {
+    if (event.target === form) {
+        toggleModal();
+    }
+}
+
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
