@@ -19,7 +19,7 @@ body {
   width: 320px;
   position: fixed;
   left: 585px;
-  top: 85px;
+  top: 85;
   opacity: 0;
   visibility: hidden;
   transform: scale(1.1);
@@ -48,7 +48,7 @@ body {
   background-color: #eee
 }
 
-.title {
+.form_title {
   color: #eee;
   font-family: sans-serif;
   font-size: 36px;
@@ -104,7 +104,7 @@ body {
   top: 20px;
 }
 
-.button {
+.send_button {
   background-color: rgb(240, 95, 64);
   border-radius: 12px;
   border: 0;
@@ -119,7 +119,7 @@ body {
   width: 100%;
 }
 
-.button:active {
+.send_button:active {
   background-color: rgb(192, 77, 52);
 }
 
