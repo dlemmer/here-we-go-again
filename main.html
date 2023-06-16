@@ -46,7 +46,7 @@
         </div>
     </header>
 
-    <form class="form">
+    <form name=form class="form">
         <span class="close-button">×</span>
         <div class="form_title">Приветствуем</div>
         <div class="subtitle">Оставьте заявку, и мы свяжемся с вами!</div>
@@ -57,13 +57,14 @@
             <input id="lastname" name="sname" class="input" type="text" placeholder="Фамилия" />
         </div>
         <div class="input-container ic2">
-            <input id="email" name="email" class="input" type="text" placeholder="E-mail" />
+            <input id="email" name="mail" class="input" type="text" placeholder="E-mail" />
         </div>
-        <div class="data_agree">
+        <!-- <div class="data_agree">
             <input type="checkbox" id="horns" name="data_check">
             <label id="data_name" for="horns">Согласие на обработку персональных данных</label>
-        </div>
-        <button type="text" class="send_button">ОТПРАВИТЬ</button>
+        </div> -->
+        <input type="button" value="ОТПРАВИТЬ" name="send_button" class="send_button" onclick="login()">
+        <!-- <button type="text" name="send_button" class="send_button" onclick="login()">ОТПРАВИТЬ</button> -->
     </form>
 
     <!-- Блок "welcome", краткое название ПП, кнопка скачивания, небольшое поясненение области применения -->
@@ -218,7 +219,8 @@
         </div>
     </section>
     <script src="script/script.js"></script>
-    <script src="/script/form.js"></script>
+    <script src="script/form.js"></script>
+    <script src="script/check form.js"></script>
 </body>
 
 </html>

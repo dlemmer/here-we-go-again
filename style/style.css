@@ -313,7 +313,7 @@ li {
     padding: 20px;
     width: 320px;
     position: fixed;
-    left: 585px;
+    left: 1170px;
     top: 85;
     opacity: 0;
     visibility: hidden;
@@ -338,6 +338,7 @@ li {
     cursor: pointer;
     border-radius: 0.25rem;
     background-color: rgb(144, 144, 144);
+    margin: 10px;
 }
 
 .close-button:hover {
@@ -349,7 +350,7 @@ li {
     font-family: sans-serif;
     font-size: 36px;
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .subtitle {
@@ -410,7 +411,7 @@ li {
     font-size: 15px;
     font-weight: 300;
     height: 50px;
-    margin-top: 38px;
+    margin-top: 25px;
     text-align: center;
     width: 100%;
 }
@@ -438,3 +439,4 @@ li {
     color: #eee;
     margin-top: 10px;
 }
+

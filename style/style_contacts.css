@@ -73,36 +73,139 @@ li {
     margin-bottom: 15px;
 }
 
-/* стиль для анимации js */
-
-/* .fixed {
-	position: fixed;
-	width: 100%;
-	left: 0;
-	top: 0;
-    z-index: 99999;
-} */
- 
-/* .services__item {
-	opacity: 0;
-	transform: translateY(30px);
-	transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
-} */
-
-/* .services__item.animation-class {
-	opacity: 1;
-	transform: translateY(0);
-	transition: opacity 0.1s ease-in-out, transform 0.3s ease-in-out;
+/* REGISTRATION FORM */
+.form {
+    background-color: #15172b;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 550px;
+    padding: 20px;
+    width: 320px;
+    position: fixed;
+    left: 1170px;
+    top: 85;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
 
-.services__item.animation-class:nth-child(2) {
-	transition-delay: 0.2s;
+.show-form {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    z-index: 999999;
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
-.services__item.animation-class:nth-child(3) {
-	transition-delay: 0.4s;
+
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: rgb(144, 144, 144);
+    margin: 10px;
 }
 
-.services__item.animation-class:nth-child(4) {
-	transition-delay: 0.6s;
-} */ 
+.close-button:hover {
+    background-color: #eee
+}
+
+.form_title {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.subtitle {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+}
+
+.ic1 {
+    margin-top: 40px;
+}
+
+.ic2 {
+    margin-top: 30px;
+}
+
+.input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+
+
+.placeholder {
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+}
+
+.send_button {
+    background-color: rgb(240, 95, 64);
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 300;
+    height: 50px;
+    margin-top: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+.send_button:active {
+    background-color: rgb(192, 77, 52);
+}
+
+#firstname,
+#lastname,
+#email {
+    font-size: 15px;
+    font-weight: 300;
+    opacity: 0.6;
+}
+
+.data_agree {
+    margin-top: 10px;
+}
+
+#data_name {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: #eee;
+    margin-top: 10px;
+}
+
